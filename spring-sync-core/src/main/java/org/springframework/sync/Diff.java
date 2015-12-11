@@ -108,6 +108,7 @@ public class Diff {
 				return;
 			}
 						
+			// FIXME: Somehow it's possible to get a NPE here
 			Class<? extends Object> originalType = original.getClass();
 			Field[] fields = originalType.getDeclaredFields();
 			for (Field field : fields) {
